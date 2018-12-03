@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <com.example.jmin.minesweeper.ui.MineSweeperView
+            android:id="@+id/mineSweeperView"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dig"
+            android:id="@+id/digBtn"
+            android:background="@drawable/digbtn"
+            android:textColor="#F2CE84"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/plant_flag"
+            android:textColor="#9C7574"
+            android:background="@drawable/plantflagbtn"
+            android:id="@+id/flagBtn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/restart_game"
+            android:textColor="#442C2E"
+            android:background="@drawable/restartbtn"
+            android:id="@+id/restartBtn"/>
+        <TextView
+            android:id="@+id/difficultyTv"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/difficulty_medium"
+            android:textColor="@color/fbutton_color_green_sea"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <SeekBar
+        android:layout_marginTop="5dp"
+        android:id="@+id/difficultySeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="4"
+        android:max="7"
+        android:progressBackgroundTint="@color/fbutton_color_green_sea"
+        android:thumbTint="@color/fbutton_color_green_sea"/>
+</LinearLayout>

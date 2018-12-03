@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MineSweeper</string>
+    <string name="dig">Dig</string>
+    <string name="plant_flag">Plant flag</string>
+    <string name="restart_game">Restart game</string>
+    <string name="win_msg">You did it! Click "RESTART GAME" to play again!</string>
+    <string name="difficulty_medium">DIFFICULTY: MEDIUM</string>
+
+    <string name="demo">sdafdsaf</string>
+</resources>
